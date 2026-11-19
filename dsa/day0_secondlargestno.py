@@ -24,7 +24,7 @@ for num in numbers:
 
 print(count)
 
-numbers1 = [2, 7, 11, 15, 3, 9, 17, 20,19]
+numbers1 = [2, 7, 20, 15, 20, 9]
 
 max = numbers1[0]
 secondlargest = numbers1[0]
@@ -34,7 +34,7 @@ for num in numbers1:
     if num > max:
         secondlargest = max
         max = num
-    elif num >= secondlargest:
+    elif max > num > secondlargest:
         secondlargest = num
 
 print(secondlargest)
